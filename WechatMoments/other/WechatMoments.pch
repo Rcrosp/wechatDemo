@@ -1,0 +1,41 @@
+//
+//  WechatMoments.pch
+//  WechatMoments
+//
+//  Created by Apple on 2018/11/6.
+//  Copyright © 2018年 Apple. All rights reserved.
+//
+
+#ifndef WechatMoments_pch
+#define WechatMoments_pch
+#import <Masonry.h>
+#import "UIImageView+WebCache.h"
+#import "UIView+Extention.h"
+#import "UIColor+WM.h"
+#import "NSString+WM.h"
+#import <YYKit.h>
+#if (DEBUG)
+#define WMLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define WMLog(...)
+#endif
+
+#define kOpenRelease 1
+//弱化引用
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+#define kViewHeightScale (([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO) ? 1:([UIScreen mainScreen].bounds.size.height/667))
+
+//获取屏幕 宽度、高度
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+#define APP_STATUSBAR_HEIGHT                (CGRectGetHeight([UIApplication sharedApplication].statusBarFrame))
+// 工具栏（UINavigationController.UIToolbar）高度
+#define NAVIGATIONBAR_HEIGHT                44
+// 实时系统状态栏高度+导航栏高度，如有热点栏，其高度包含在APP_STATUSBAR_HEIGHT中。
+#define STATUS_AND_NAV_BAR_HEIGHT           (APP_STATUSBAR_HEIGHT+NAVIGATIONBAR_HEIGHT)
+
+#define userInfo_url @"http://thoughtworks-ios.herokuapp.com/user/jsmith"
+#define tweets_url @"http://thoughtworks-ios.herokuapp.com/user/jsmith/tweets"
+#endif /* WechatMoments_pch */

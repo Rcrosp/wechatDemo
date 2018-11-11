@@ -7,15 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E264086383885ACBBF068B7 /* libPods-WechatMoments.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3230CB7C709BBC9202E141F4 /* libPods-WechatMoments.a */; };
+		180C8CD821944B2A00FDFE49 /* WMImagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 180C8CD721944B2A00FDFE49 /* WMImagModel.m */; };
+		180C8CE52195231400FDFE49 /* WMPhotosView.m in Sources */ = {isa = PBXBuildFile; fileRef = 180C8CE42195231400FDFE49 /* WMPhotosView.m */; };
+		180C8CE9219523B800FDFE49 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 180C8CE8219523B700FDFE49 /* YYFPSLabel.m */; };
+		180C8D04219585B700FDFE49 /* UIColor+WM.m in Sources */ = {isa = PBXBuildFile; fileRef = 180C8D03219585B700FDFE49 /* UIColor+WM.m */; };
+		180C8D0D2195916200FDFE49 /* WMCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 180C8D0B2195916100FDFE49 /* WMCommentCell.m */; };
+		180C8D10219594B300FDFE49 /* WMTweetFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 180C8D0F219594B300FDFE49 /* WMTweetFootView.m */; };
+		180C8D13219703E300FDFE49 /* NSString+WM.m in Sources */ = {isa = PBXBuildFile; fileRef = 180C8D12219703E200FDFE49 /* NSString+WM.m */; };
+		180C8D1621971B5900FDFE49 /* WMTweetMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 180C8D1521971B5900FDFE49 /* WMTweetMoreView.m */; };
+		180C8D1C2197F79500FDFE49 /* UIView+WMRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 180C8D1A2197F79500FDFE49 /* UIView+WMRefresh.m */; };
+		182524D12192DD4E006A54CE /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 182524CD2192DD4D006A54CE /* UIImageView+WebCache.m */; };
+		182524D52192DE93006A54CE /* FPImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 182524D42192DE93006A54CE /* FPImageLoader.m */; };
+		182524D82192DEAF006A54CE /* FPImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 182524D72192DEAF006A54CE /* FPImageCache.m */; };
+		182524DE2192E7D8006A54CE /* WMSenderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 182524DD2192E7D8006A54CE /* WMSenderModel.m */; };
+		182524E12192E8AE006A54CE /* WMTweetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 182524E02192E8AE006A54CE /* WMTweetModel.m */; };
+		182524E42193CF21006A54CE /* WMTweetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 182524E32193CF21006A54CE /* WMTweetCell.m */; };
 		18326F8B219172D000858B78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18326F8A219172D000858B78 /* AppDelegate.m */; };
 		18326F8E219172D000858B78 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18326F8D219172D000858B78 /* ViewController.m */; };
 		18326F91219172D000858B78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18326F8F219172D000858B78 /* Main.storyboard */; };
 		18326F93219172D000858B78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18326F92219172D000858B78 /* Assets.xcassets */; };
 		18326F96219172D000858B78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18326F94219172D000858B78 /* LaunchScreen.storyboard */; };
 		18326F99219172D000858B78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18326F98219172D000858B78 /* main.m */; };
+		18326FBB219190BF00858B78 /* UIView+Extention.m in Sources */ = {isa = PBXBuildFile; fileRef = 18326FBA219190BF00858B78 /* UIView+Extention.m */; };
+		18326FBE2191912800858B78 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18326FBC2191912800858B78 /* BaseViewController.m */; };
+		18326FC22191A3EF00858B78 /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18326FC12191A3EF00858B78 /* HttpManager.m */; };
+		18326FC52191A72E00858B78 /* WMUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18326FC42191A72E00858B78 /* WMUserInfoModel.m */; };
+		18326FC92191AA0D00858B78 /* WMHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18326FC82191AA0D00858B78 /* WMHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09EA697D2EFA4319F05FB378 /* Pods-WechatMoments.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WechatMoments.release.xcconfig"; path = "Pods/Target Support Files/Pods-WechatMoments/Pods-WechatMoments.release.xcconfig"; sourceTree = "<group>"; };
+		180C8CD621944B2A00FDFE49 /* WMImagModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMImagModel.h; sourceTree = "<group>"; };
+		180C8CD721944B2A00FDFE49 /* WMImagModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMImagModel.m; sourceTree = "<group>"; };
+		180C8CE32195231400FDFE49 /* WMPhotosView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMPhotosView.h; sourceTree = "<group>"; };
+		180C8CE42195231400FDFE49 /* WMPhotosView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMPhotosView.m; sourceTree = "<group>"; };
+		180C8CE7219523B700FDFE49 /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
+		180C8CE8219523B700FDFE49 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		180C8D02219585B700FDFE49 /* UIColor+WM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+WM.h"; sourceTree = "<group>"; };
+		180C8D03219585B700FDFE49 /* UIColor+WM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WM.m"; sourceTree = "<group>"; };
+		180C8D0B2195916100FDFE49 /* WMCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMCommentCell.m; sourceTree = "<group>"; };
+		180C8D0C2195916100FDFE49 /* WMCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMCommentCell.h; sourceTree = "<group>"; };
+		180C8D0E219594B300FDFE49 /* WMTweetFootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMTweetFootView.h; sourceTree = "<group>"; };
+		180C8D0F219594B300FDFE49 /* WMTweetFootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMTweetFootView.m; sourceTree = "<group>"; };
+		180C8D11219703E200FDFE49 /* NSString+WM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WM.h"; sourceTree = "<group>"; };
+		180C8D12219703E200FDFE49 /* NSString+WM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WM.m"; sourceTree = "<group>"; };
+		180C8D1421971B5900FDFE49 /* WMTweetMoreView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMTweetMoreView.h; sourceTree = "<group>"; };
+		180C8D1521971B5900FDFE49 /* WMTweetMoreView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMTweetMoreView.m; sourceTree = "<group>"; };
+		180C8D1A2197F79500FDFE49 /* UIView+WMRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WMRefresh.m"; sourceTree = "<group>"; };
+		180C8D1B2197F79500FDFE49 /* UIView+WMRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WMRefresh.h"; sourceTree = "<group>"; };
+		182524C72192DD4C006A54CE /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		182524CD2192DD4D006A54CE /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		182524D32192DE93006A54CE /* FPImageLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FPImageLoader.h; sourceTree = "<group>"; };
+		182524D42192DE93006A54CE /* FPImageLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPImageLoader.m; sourceTree = "<group>"; };
+		182524D62192DEAF006A54CE /* FPImageCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FPImageCache.h; sourceTree = "<group>"; };
+		182524D72192DEAF006A54CE /* FPImageCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPImageCache.m; sourceTree = "<group>"; };
+		182524DC2192E7D8006A54CE /* WMSenderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMSenderModel.h; sourceTree = "<group>"; };
+		182524DD2192E7D8006A54CE /* WMSenderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMSenderModel.m; sourceTree = "<group>"; };
+		182524DF2192E8AE006A54CE /* WMTweetModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMTweetModel.h; sourceTree = "<group>"; };
+		182524E02192E8AE006A54CE /* WMTweetModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMTweetModel.m; sourceTree = "<group>"; };
+		182524E22193CF21006A54CE /* WMTweetCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMTweetCell.h; sourceTree = "<group>"; };
+		182524E32193CF21006A54CE /* WMTweetCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMTweetCell.m; sourceTree = "<group>"; };
 		18326F86219172D000858B78 /* WechatMoments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WechatMoments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18326F89219172D000858B78 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18326F8A219172D000858B78 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +78,19 @@
 		18326F95219172D000858B78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18326F97219172D000858B78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18326F98219172D000858B78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18326FAF2191840600858B78 /* WechatMoments.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WechatMoments.pch; sourceTree = "<group>"; };
+		18326FB9219190BF00858B78 /* UIView+Extention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extention.h"; sourceTree = "<group>"; };
+		18326FBA219190BF00858B78 /* UIView+Extention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extention.m"; sourceTree = "<group>"; };
+		18326FBC2191912800858B78 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		18326FBD2191912800858B78 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		18326FC02191A3EF00858B78 /* HttpManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpManager.h; sourceTree = "<group>"; };
+		18326FC12191A3EF00858B78 /* HttpManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpManager.m; sourceTree = "<group>"; };
+		18326FC32191A72E00858B78 /* WMUserInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMUserInfoModel.h; sourceTree = "<group>"; };
+		18326FC42191A72E00858B78 /* WMUserInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMUserInfoModel.m; sourceTree = "<group>"; };
+		18326FC72191AA0D00858B78 /* WMHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMHeaderView.h; sourceTree = "<group>"; };
+		18326FC82191AA0D00858B78 /* WMHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMHeaderView.m; sourceTree = "<group>"; };
+		243E2E4945EFF0275C6E2C70 /* Pods-WechatMoments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WechatMoments.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WechatMoments/Pods-WechatMoments.debug.xcconfig"; sourceTree = "<group>"; };
+		3230CB7C709BBC9202E141F4 /* libPods-WechatMoments.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WechatMoments.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +98,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E264086383885ACBBF068B7 /* libPods-WechatMoments.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180C8CE6219523B700FDFE49 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				180C8CE7219523B700FDFE49 /* YYFPSLabel.h */,
+				180C8CE8219523B700FDFE49 /* YYFPSLabel.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		18326F7D219172D000858B78 = {
 			isa = PBXGroup;
 			children = (
 				18326F88219172D000858B78 /* WechatMoments */,
 				18326F87219172D000858B78 /* Products */,
+				813F9B2973841DC5FCD43B27 /* Pods */,
+				ADED8697EECF763C26565046 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,17 +135,162 @@
 		18326F88219172D000858B78 /* WechatMoments */ = {
 			isa = PBXGroup;
 			children = (
-				18326F89219172D000858B78 /* AppDelegate.h */,
-				18326F8A219172D000858B78 /* AppDelegate.m */,
-				18326F8C219172D000858B78 /* ViewController.h */,
-				18326F8D219172D000858B78 /* ViewController.m */,
-				18326F8F219172D000858B78 /* Main.storyboard */,
+				18326FA02191732600858B78 /* Modules */,
+				18326F9F219172FD00858B78 /* AppDelegate */,
+				18326FB0219184D100858B78 /* other */,
+				18326FA4219173C500858B78 /* Utils */,
 				18326F92219172D000858B78 /* Assets.xcassets */,
-				18326F94219172D000858B78 /* LaunchScreen.storyboard */,
 				18326F97219172D000858B78 /* Info.plist */,
 				18326F98219172D000858B78 /* main.m */,
 			);
 			path = WechatMoments;
+			sourceTree = "<group>";
+		};
+		18326F9F219172FD00858B78 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				18326F89219172D000858B78 /* AppDelegate.h */,
+				18326F8A219172D000858B78 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		18326FA02191732600858B78 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				18326FA12191733200858B78 /* WechatMoments */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		18326FA12191733200858B78 /* WechatMoments */ = {
+			isa = PBXGroup;
+			children = (
+				18326FC62191A9EA00858B78 /* View */,
+				18326FA32191737C00858B78 /* Controller */,
+				18326FA22191735900858B78 /* Model */,
+			);
+			path = WechatMoments;
+			sourceTree = "<group>";
+		};
+		18326FA22191735900858B78 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18326FC32191A72E00858B78 /* WMUserInfoModel.h */,
+				18326FC42191A72E00858B78 /* WMUserInfoModel.m */,
+				182524DC2192E7D8006A54CE /* WMSenderModel.h */,
+				182524DD2192E7D8006A54CE /* WMSenderModel.m */,
+				182524DF2192E8AE006A54CE /* WMTweetModel.h */,
+				182524E02192E8AE006A54CE /* WMTweetModel.m */,
+				180C8CD621944B2A00FDFE49 /* WMImagModel.h */,
+				180C8CD721944B2A00FDFE49 /* WMImagModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18326FA32191737C00858B78 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18326FBD2191912800858B78 /* BaseViewController.h */,
+				18326FBC2191912800858B78 /* BaseViewController.m */,
+				18326F8C219172D000858B78 /* ViewController.h */,
+				18326F8D219172D000858B78 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18326FA4219173C500858B78 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				180C8CE6219523B700FDFE49 /* Tools */,
+				18326FBF2191A39900858B78 /* HttpTool */,
+				18326FB8219190BF00858B78 /* Category */,
+				18326FA5219173DA00858B78 /* FPWebImage */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		18326FA5219173DA00858B78 /* FPWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				182524C72192DD4C006A54CE /* UIImageView+WebCache.h */,
+				182524CD2192DD4D006A54CE /* UIImageView+WebCache.m */,
+				182524D32192DE93006A54CE /* FPImageLoader.h */,
+				182524D42192DE93006A54CE /* FPImageLoader.m */,
+				182524D62192DEAF006A54CE /* FPImageCache.h */,
+				182524D72192DEAF006A54CE /* FPImageCache.m */,
+			);
+			path = FPWebImage;
+			sourceTree = "<group>";
+		};
+		18326FB0219184D100858B78 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				18326F94219172D000858B78 /* LaunchScreen.storyboard */,
+				18326F8F219172D000858B78 /* Main.storyboard */,
+				18326FAF2191840600858B78 /* WechatMoments.pch */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		18326FB8219190BF00858B78 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				180C8D1B2197F79500FDFE49 /* UIView+WMRefresh.h */,
+				180C8D1A2197F79500FDFE49 /* UIView+WMRefresh.m */,
+				180C8D11219703E200FDFE49 /* NSString+WM.h */,
+				180C8D12219703E200FDFE49 /* NSString+WM.m */,
+				18326FB9219190BF00858B78 /* UIView+Extention.h */,
+				18326FBA219190BF00858B78 /* UIView+Extention.m */,
+				180C8D02219585B700FDFE49 /* UIColor+WM.h */,
+				180C8D03219585B700FDFE49 /* UIColor+WM.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		18326FBF2191A39900858B78 /* HttpTool */ = {
+			isa = PBXGroup;
+			children = (
+				18326FC02191A3EF00858B78 /* HttpManager.h */,
+				18326FC12191A3EF00858B78 /* HttpManager.m */,
+			);
+			path = HttpTool;
+			sourceTree = "<group>";
+		};
+		18326FC62191A9EA00858B78 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				180C8D0C2195916100FDFE49 /* WMCommentCell.h */,
+				180C8D0B2195916100FDFE49 /* WMCommentCell.m */,
+				180C8CE32195231400FDFE49 /* WMPhotosView.h */,
+				180C8CE42195231400FDFE49 /* WMPhotosView.m */,
+				18326FC72191AA0D00858B78 /* WMHeaderView.h */,
+				18326FC82191AA0D00858B78 /* WMHeaderView.m */,
+				182524E22193CF21006A54CE /* WMTweetCell.h */,
+				182524E32193CF21006A54CE /* WMTweetCell.m */,
+				180C8D0E219594B300FDFE49 /* WMTweetFootView.h */,
+				180C8D0F219594B300FDFE49 /* WMTweetFootView.m */,
+				180C8D1421971B5900FDFE49 /* WMTweetMoreView.h */,
+				180C8D1521971B5900FDFE49 /* WMTweetMoreView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		813F9B2973841DC5FCD43B27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				243E2E4945EFF0275C6E2C70 /* Pods-WechatMoments.debug.xcconfig */,
+				09EA697D2EFA4319F05FB378 /* Pods-WechatMoments.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ADED8697EECF763C26565046 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3230CB7C709BBC9202E141F4 /* libPods-WechatMoments.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +300,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18326F9C219172D000858B78 /* Build configuration list for PBXNativeTarget "WechatMoments" */;
 			buildPhases = (
+				05AF7ABF6FA74F72FA8DBBC6 /* [CP] Check Pods Manifest.lock */,
 				18326F82219172D000858B78 /* Sources */,
 				18326F83219172D000858B78 /* Frameworks */,
 				18326F84219172D000858B78 /* Resources */,
+				F8F62EAAC9134133024CEE9E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,14 +361,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05AF7ABF6FA74F72FA8DBBC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WechatMoments-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8F62EAAC9134133024CEE9E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WechatMoments/Pods-WechatMoments-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WechatMoments/Pods-WechatMoments-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18326F82219172D000858B78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182524DE2192E7D8006A54CE /* WMSenderModel.m in Sources */,
+				180C8D04219585B700FDFE49 /* UIColor+WM.m in Sources */,
+				182524D52192DE93006A54CE /* FPImageLoader.m in Sources */,
+				182524D12192DD4E006A54CE /* UIImageView+WebCache.m in Sources */,
+				18326FC22191A3EF00858B78 /* HttpManager.m in Sources */,
+				18326FBE2191912800858B78 /* BaseViewController.m in Sources */,
+				180C8CE52195231400FDFE49 /* WMPhotosView.m in Sources */,
+				180C8D0D2195916200FDFE49 /* WMCommentCell.m in Sources */,
+				182524E42193CF21006A54CE /* WMTweetCell.m in Sources */,
+				180C8CE9219523B800FDFE49 /* YYFPSLabel.m in Sources */,
+				18326FBB219190BF00858B78 /* UIView+Extention.m in Sources */,
+				182524D82192DEAF006A54CE /* FPImageCache.m in Sources */,
 				18326F8E219172D000858B78 /* ViewController.m in Sources */,
+				18326FC92191AA0D00858B78 /* WMHeaderView.m in Sources */,
+				182524E12192E8AE006A54CE /* WMTweetModel.m in Sources */,
+				180C8CD821944B2A00FDFE49 /* WMImagModel.m in Sources */,
+				180C8D10219594B300FDFE49 /* WMTweetFootView.m in Sources */,
+				18326FC52191A72E00858B78 /* WMUserInfoModel.m in Sources */,
 				18326F99219172D000858B78 /* main.m in Sources */,
+				180C8D1C2197F79500FDFE49 /* UIView+WMRefresh.m in Sources */,
+				180C8D13219703E300FDFE49 /* NSString+WM.m in Sources */,
 				18326F8B219172D000858B78 /* AppDelegate.m in Sources */,
+				180C8D1621971B5900FDFE49 /* WMTweetMoreView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,9 +559,13 @@
 		};
 		18326F9D219172D000858B78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 243E2E4945EFF0275C6E2C70 /* Pods-WechatMoments.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YZ54XF997S;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WechatMoments/other/WechatMoments.pch";
 				INFOPLIST_FILE = WechatMoments/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ThoughtWorks.WechatMoments;
@@ -289,9 +576,13 @@
 		};
 		18326F9E219172D000858B78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09EA697D2EFA4319F05FB378 /* Pods-WechatMoments.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YZ54XF997S;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WechatMoments/other/WechatMoments.pch";
 				INFOPLIST_FILE = WechatMoments/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ThoughtWorks.WechatMoments;
