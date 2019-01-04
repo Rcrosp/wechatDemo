@@ -80,52 +80,52 @@
 }
 
 - (void)setTweetModel:(WMTweetModel *)tweetModel {
-    
-    _tweetModel = tweetModel;
-    [self.avaImgView setFPImageWithURL:tweetModel.sender.avatar placeholderImageName:@"img-portrait-def"];
-    self.nameLabel.text = tweetModel.sender.username;
-    if (tweetModel.isNeedExpanding ) {
-        self.lookMoreBtn.hidden = NO;
-        if (tweetModel.isExpanding) {
-            self.contentLabel.numberOfLines = 0;
-            [self.lookMoreBtn setTitle:@"收起" forState:UIControlStateNormal];
+    if(_tweetModel != tweetModel) {
+        _tweetModel = tweetModel;
+        [self.avaImgView setFPImageWithURL:tweetModel.sender.avatar placeholderImageName:@"img-portrait-def"];
+        self.nameLabel.text = tweetModel.sender.username;
+        if (tweetModel.isNeedExpanding ) {
+            self.lookMoreBtn.hidden = NO;
+            if (tweetModel.isExpanding) {
+                self.contentLabel.numberOfLines = 0;
+                [self.lookMoreBtn setTitle:@"收起" forState:UIControlStateNormal];
+            }else {
+                self.contentLabel.numberOfLines = 4;
+                [self.lookMoreBtn setTitle:@"查看全部" forState:UIControlStateNormal];
+            }
+            [self.lookMoreBtn mas_updateConstraints:^(MASConstraintMaker *make) {
+                make.height.mas_equalTo(10);
+                make.top.mas_equalTo(self.contentLabel.mas_bottom).offset(8);
+            }];
         }else {
+            self.lookMoreBtn.hidden = YES;
             self.contentLabel.numberOfLines = 4;
-            [self.lookMoreBtn setTitle:@"查看全部" forState:UIControlStateNormal];
+            [self.lookMoreBtn mas_updateConstraints:^(MASConstraintMaker *make) {
+                make.height.mas_equalTo(0);
+                make.top.mas_equalTo(self.contentLabel.mas_bottom).offset(0);
+            }];
         }
-        [self.lookMoreBtn mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.height.mas_equalTo(10);
-            make.top.mas_equalTo(self.contentLabel.mas_bottom).offset(8);
-        }];
-    }else {
-        self.lookMoreBtn.hidden = YES;
-        self.contentLabel.numberOfLines = 4;
-        [self.lookMoreBtn mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.height.mas_equalTo(0);
-            make.top.mas_equalTo(self.contentLabel.mas_bottom).offset(0);
-        }];
-    }
-    self.contentLabel.text = tweetModel.content;
-    self.photosView.imageModelArray = tweetModel.images;
-    if(tweetModel.images.count > 0) {
-        [self.photosView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.lookMoreBtn.mas_bottom).offset(10).with.priorityHigh();
-            make.left.equalTo(self.nameLabel);
-        }];
-    }else {
-        if (!tweetModel.content) {
+        self.contentLabel.text = tweetModel.content;
+        self.photosView.imageModelArray = tweetModel.images;
+        if(tweetModel.images.count > 0) {
             [self.photosView mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(self.contentLabel.mas_bottom).offset(30).with.priorityHigh();
+                make.top.mas_equalTo(self.lookMoreBtn.mas_bottom).offset(10).with.priorityHigh();
                 make.left.equalTo(self.nameLabel);
             }];
         }else {
-            [self.photosView mas_updateConstraints:^(MASConstraintMaker *make) {
-                make.top.mas_equalTo(self.contentLabel.mas_bottom).offset(20).with.priorityHigh();
-                make.left.equalTo(self.nameLabel);
-            }];
+            if (!tweetModel.content) {
+                [self.photosView mas_updateConstraints:^(MASConstraintMaker *make) {
+                    make.top.mas_equalTo(self.contentLabel.mas_bottom).offset(30).with.priorityHigh();
+                    make.left.equalTo(self.nameLabel);
+                }];
+            }else {
+                [self.photosView mas_updateConstraints:^(MASConstraintMaker *make) {
+                    make.top.mas_equalTo(self.contentLabel.mas_bottom).offset(20).with.priorityHigh();
+                    make.left.equalTo(self.nameLabel);
+                }];
+            }
         }
     }
-    
 }
 
 - (void)clickMore {
@@ -139,6 +139,11 @@
         self.tweetModel.isExpanding = !self.tweetModel.isExpanding;
         self.tweetLookFullTextblock();
     }
+}
+
+- (void)prepareForReuse {
+    [super prepareForReuse];
+    _tweetModel = nil;
 }
 
 #pragma mark ---lazy

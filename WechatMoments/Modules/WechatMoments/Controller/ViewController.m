@@ -14,20 +14,98 @@ static NSString *WMTweetFootViewID = @"WMTweetFootView";
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource, WMTweetCellDelegate, UIGestureRecognizerDelegate>
 @property(nonatomic, assign)NSInteger page;
 @property(nonatomic, weak)UIImageView *imgView;
-@property(nonatomic, copy)NSMutableArray *tweetsArray;
+@property(nonatomic, strong)NSMutableArray *tweetsArray;
 @property(nonatomic, copy)NSArray *allTweetsArray;
 @property (nonatomic, strong) WMTweetMoreView *tweetMoreView;
 @end
-
+int global_var = 3;
+static int static_global_var = 4;
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    self.page = 0;
+//    dispatch_async(dispatch_queue_create("xxxx",  DISPATCH_QUEUE_CONCURRENT), ^{
+//        for (int i = 0;  i< 10000; i ++) {
+//            self.page ++;
+//            NSLog(@"xxxx:%ld",(long)self.page);
+//        }
+//    });
+//    NSOperation
+//    NSMutableArray *arr = @[@"1"].mutableCopy;
+//    [arr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//
+//    }];
+//    NSLog(@"%ld",(long)self.page);
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//         NSLog(@"%ld",(long)self.page);
+//    });
+//    int a = 6;
+//    NSString *str = @"123";
+//    static int static_global_var1 = 14;
+//    NSMutableArray *arr = [NSMutableArray array];
+//    int(^mBlock)(void) = ^(void) {
+//        NSLog(@"%d",self.page);
+//        [arr addObject:@"123"];
+//        return static_global_var1 * 2;
+//    };
+//    str = @"456";
+//    self.page = 3;
+//    static_global_var1 = 5 ;
+//    NSLog(@"%d",mBlock());
+   
+//    NSMutableArray *arr = @[@1,@3,@0,@0,@5,@0,@9,@7,@0,@2,@4,@6,@0,@8,@0,@10].mutableCopy;
+//    for (int i = 0; i < arr.count ; i ++) {
+//        for (int j = i; j < arr.count - 1; j ++) {
+//             NSNumber *num = arr[j];
+//            if (num.integerValue == 0) {
+//                NSNumber *tmp = arr[j];
+//                arr[j] = arr[j + 1];
+//                arr[j + 1] = tmp;
+//
+//            }
+//        }
+//        for (NSInteger j = arr.count - 1; j > i; j --) {
+//            NSNumber *num = arr[j];
+//            NSNumber *nextNum = arr[j-1];
+//            if (num.integerValue < nextNum.integerValue ) {
+//                NSNumber *tmp = arr[j];
+//                arr[j] = arr[j - 1];
+//                arr[j - 1] = tmp;
+//            }
+//        }
+//        for (int j = i; j < arr.count - 1; j ++) {
+//            NSNumber *num = arr[j];
+//            NSNumber *nextNum = arr[j+1];
+//            if (nextNum.integerValue < num.integerValue) {
+//                 [arr exchangeObjectAtIndex:j withObjectAtIndex:(j + 1)];
+//            }
+////            if (num.intValue == 0) {
+////                [arr exchangeObjectAtIndex:j withObjectAtIndex:(j + 1)];
+////            }
+//        }
+//    }
+//
+//    NSLog(@"%@", arr);
     [self initData];
     if (kOpenRelease) {
         [self.view addSubview:self.testLabel];
     }
 }
+
+//- (void)tick:(CADisplayLink *)link {
+//    if (_lastTime == 0) {
+//        _lastTime = link.timestamp;
+//        return;
+//    }
+//    _count++;
+//    NSTimeInterval delta = link.timestamp - _lastTime;
+//    if (delta < 1) return;
+//    _lastTime = link.timestamp;
+//    float fps = _count / delta;
+//    NSLog(@"页面帧率：%f",fps);
+//    _count = 0;
+//}
 
 - (void)initData {
     self.page = 0;
@@ -76,7 +154,7 @@ static NSString *WMTweetFootViewID = @"WMTweetFootView";
         if(self.allTweetsArray.count > 0) {
             self.tweetsArray = [NSMutableArray arrayWithArray: [self getCurrentTweets:self.tweetsArray nextPage:page fromAllArray:self.allTweetsArray]];
             if (isPull) {
-                 [self.view wm_endRefresh];
+                [self.view wm_endRefresh];
                 [self.tableView.mj_header endRefreshing];
             }else {
                 [self.tableView.mj_footer endRefreshing];
